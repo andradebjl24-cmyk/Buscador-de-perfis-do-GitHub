@@ -1,0 +1,24 @@
+
+@import './base.css';
+
+/* A aplicação ocupa toda a tela */
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Remove os estilos verdes padrão do Vue */
+a,
+.green {
+  text-decoration: none;
+}
+
+/* Evita que o layout crie duas colunas no computador */
+@media (min-width: 1024px) {
+  #app {
+    display: block;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+}
